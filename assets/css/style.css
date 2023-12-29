@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+}
+
+:root {
+  --borderColor: #ffffff9d;
+}
+
+.devLogHeading {
+  color: rgb(216, 75, 75);
+  /*blur*/
+  text-shadow: 0 0 10px var(--borderColor);
+  /*text-shadow: 2px 0 var(--borderColor), -2px 0 var(--borderColor), 0 2px var(--borderColor), 0 -2px var(--borderColor), 1px 1px var(--borderColor), -1px -1px var(--borderColor), 1px -1px var(--borderColor), -1px 1px var(--borderColor);*/
+  margin: 25px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.developmentCard {
+  width: 100%;
+  min-height: 100px;
+  background-color: rgb(145, 145, 145);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.done {
+  color: rgb(0, 255, 0);
+}
+
+.inProgress {
+  color: rgb(255, 255, 0);
+}
+
+.notStarted {
+  color: rgb(255, 0, 0);
+}
+
+.milestoneLabel {
+  color: white;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.slide-enter,
+.slide-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+.slide-enter-to,
+.slide-leave {
+  max-height: 1000px;
+  opacity: 1;
+}
